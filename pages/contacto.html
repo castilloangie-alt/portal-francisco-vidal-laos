@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - I.E.P. Francisco Vidal Laos</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Tipografías de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2E7D32; box-shadow: 0 2px 10px rgba(0,0,0,0.15);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assets/img/vidall.png" alt="Insignia I.E.P. Francisco Vidal Laos" style="height: 45px; width: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <i class="bi bi-shield-fill-check text-warning fs-3" style="display:none;"></i>
+                <span class="fw-bold" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center" style="font-family: 'Poppins', sans-serif;">
+                    <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="nosotros.html" id="navbarNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <ul class="dropdown-menu shadow border-0" aria-labelledby="navbarNosotros">
+                            <li><a class="dropdown-item small" href="nosotros.html#historia"><i class="bi bi-journal-text me-2 text-success"></i> Nuestra Historia</a></li>
+                            <li><a class="dropdown-item small" href="nosotros.html#mision-vision"><i class="bi bi-compass me-2 text-success"></i> Misión, Visión y Valores</a></li>
+                            <li><a class="dropdown-item small" href="nosotros.html#directiva"><i class="bi bi-person-badge me-2 text-success"></i> Plana Directiva y Administrativa</a></li>
+                            <li><a class="dropdown-item small" href="nosotros.html#docentes"><i class="bi bi-mortarboard me-2 text-success"></i> Plana Docente por Cursos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="horarios.html">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="tramites.html">Trámites</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link active text-warning fw-semibold" href="contacto.html">Contacto</a></li>
+                    
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn fw-bold rounded-pill px-3 py-2 text-dark d-inline-flex align-items-center gap-2" href="../sistema/index.html" style="background-color: #FBC02D; border: none;">
+                            <i class="bi bi-person-lock"></i> Acceso al Sistema
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- BANNER DE CABECERA CONTACTO -->
+    <header class="text-white text-center py-5 shadow-sm" style="background: linear-gradient(135deg, #113813 0%, #1b5e20 40%, #2e7d32 100%); margin-top: 65px; position: relative; overflow: hidden;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.25); pointer-events: none;"></div>
+        
+        <div class="container py-4 position-relative" style="z-index: 2;">
+            <h1 class="fw-bold display-4 mb-2" style="font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);">
+                Atención y Contacto
+            </h1>
+            <p class="lead opacity-90 mb-0" style="text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">
+                Estamos a tu servicio para atender tus consultas, trámites e información institucional
+            </p>
+        </div>
+    </header>
+    <!-- SECCIÓN PRINCIPAL DE CONTACTO -->
+    <main class="container pt-3 pb-5">
+        
+        <div class="text-center mb-5">
+            <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">ATENCIÓN AL PÚBLICO</span>
+            <h2 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Contáctate con Nosotros</h2>
+        </div>
+
+        <div class="row g-4 mt-1">
+            
+            <!-- COLUMNA IZQUIERDA: DATOS Y REDES -->
+            <div class="col-lg-5">
+                
+                <!-- Tarjeta 1: Canales de Atención Rápida -->
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 bg-light border-start border-4 border-success">
+                    <h5 class="fw-bold mb-3" style="color: #2E7D32;">
+                        <i class="bi bi-chat-dots-fill me-2 text-warning"></i> Atenciones Inmediatas
+                    </h5>
+                    <p class="small text-muted mb-3">Escríbenos directamente o síguenos en nuestras redes oficiales:</p>
+                    
+                    <div class="d-grid gap-2">
+                        <a href="https://wa.me/51999999999?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="btn btn-success rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-whatsapp fs-5"></i> Escribir por WhatsApp
+                        </a>
+                        <a href="https://www.facebook.com/iepfranciscovidal/?locale=es_LA" target="_blank" class="btn text-white rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2" style="background-color: #1877F2;">
+                            <i class="bi bi-facebook fs-5"></i> Página de Facebook
+                        </a>
+                        <a href="https://www.tiktok.com/@iepfranciscovidal" target="_blank" class="btn btn-dark rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-tiktok fs-5"></i> Perfil de TikTok
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Canales Oficiales -->
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+                    <h5 class="fw-bold mb-4" style="color: #2E7D32;">Canales de Atención</h5>
+                    
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                        <div class="rounded-circle bg-success text-white p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; flex-shrink: 0;">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Dirección Ubicación</h6>
+                            <small class="text-muted">Calle C. Córdova 425, Supe Pueblo, Barranca - Perú.</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                        <div class="rounded-circle bg-success text-white p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; flex-shrink: 0;">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Teléfonos de Contacto</h6>
+                            <small class="text-muted">(01) 236-4780 / +51 970 367 733</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3 mb-3">
+                        <div class="rounded-circle bg-success text-white p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; flex-shrink: 0;">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Correo Electrónico</h6>
+                            <small class="text-muted">hnorabuenac@gmail.com</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="rounded-circle bg-success text-white p-2 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; flex-shrink: 0;">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Horario de Atención</h6>
+                            <small class="text-muted">Lunes a Viernes: 7:30 AM - 3:30 PM</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLUMNA DERECHA: FORMULARIO -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                    <h4 class="fw-bold mb-3" style="color: #2E7D32;">Envíanos un Mensaje</h4>
+                    <p class="small text-muted mb-4">Completa los campos y te responderemos a la brevedad posible.</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Nombre Completo</label>
+                            <input type="text" class="form-control rounded-3" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Correo Electrónico</label>
+                                <input type="email" class="form-control rounded-3" placeholder="nombre@correo.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Teléfono / Celular</label>
+                                <input type="tel" class="form-control rounded-3" placeholder="987654321">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Asunto</label>
+                            <input type="text" class="form-control rounded-3" placeholder="Ej. Consulta de Matrícula">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold">Mensaje</label>
+                            <textarea class="form-control rounded-3" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success fw-bold px-4 py-2 rounded-3 text-white">
+                            <i class="bi bi-send-fill me-2"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="text-white pt-5 pb-3" style="background-color: #424242; border-top: 4px solid #FBC02D; font-family: 'Roboto', sans-serif;">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</h5>
+                    <p class="small text-white-50">Institución Educativa Pública de nivel secundaria comprometida con la formación integral en Supe Pueblo.</p>
+                    <p class="small text-white-50"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Calle C. Córdova 425, Supe Pueblo, Barranca - Perú</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="nosotros.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Nuestra Historia</a></li>
+                        <li class="mb-2"><a href="servicios.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Servicios Educativos</a></li>
+                        <li class="mb-2"><a href="tramites.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Trámites y Secretaría</a></li>
+                        <li class="mb-2"><a href="../sistema/index.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Acceso al Sistema de Asistencia</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Contacto y Redes</h5>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> (01) 236-4780</p>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> hnorabuenac@gmail.com</p>
+                    <p class="small text-white-50 mb-3"><i class="bi bi-clock-fill text-warning me-2"></i> Lunes a Viernes: 7:30 AM - 3:30 PM</p>
+                    
+                    <div class="d-flex gap-2 align-items-center mt-3 pt-2 border-top border-secondary">
+                        <span class="small text-white-50 me-1">Síguenos:</span>
+                        <a href="https://www.facebook.com/iepfranciscovidal/?locale=es_LA" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@iepfranciscovidal" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center gap-1 fw-bold">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row align-items-center pt-2">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">&copy; 2026 I.E.P. Francisco Vidal Laos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0 text-white-50">Desarrollado en convenio con el <span class="text-warning">IESTP "Víctor Raúl Haya de la Torre"</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle shadow-lg d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; z-index: 9999;" title="Escríbenos a WhatsApp">
+        <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

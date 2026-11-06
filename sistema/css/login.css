@@ -1,0 +1,71 @@
+/* ==========================================================================
+   SISTEMA DE ASISTENCIA - I.E.P. FRANCISCO VIDAL LAOS (SUPE)
+   Hoja de Estilos del Login - Módulo I (Preparado para Módulo II)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body.login-body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2E7D32 0%, #1b5e20 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.login-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 420px;
+    border-top: 6px solid #FBC02D; /* Borde superior amarillo institucional */
+    transition: transform 0.3s ease;
+}
+
+.login-icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E7D32;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.form-control:focus {
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 0.25rem rgba(46, 125, 50, 0.25);
+}
+
+.btn-login {
+    background-color: #2E7D32;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #1b5e20;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.btn-return {
+    border-color: #E0E0E0;
+    color: #616161;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-return:hover {
+    background-color: #F5F5F5;
+    color: #424242;
+}

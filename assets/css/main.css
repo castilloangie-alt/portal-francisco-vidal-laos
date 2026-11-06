@@ -1,0 +1,98 @@
+/* ==========================================================================
+   PORTAL WEB INSTITUCIONAL - I.E.P. FRANCISCO VIDAL LAOS (SUPE)
+   Hoja de Estilos Principal - Módulo I
+   ========================================================================== */
+
+/* Importación de Fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Variables de Colores e Identidad Visual */
+:root {
+    --verde-institucional: #2E7D32;
+    --verde-secundario: #4CAF50;
+    --amarillo-institucional: #FBC02D;
+    --blanco: #FFFFFF;
+    --gris-oscuro: #424242;
+    --gris-claro: #F5F5F5;
+    --verde-hover: #1b5e20;
+    
+    --fuente-titulos: 'Poppins', sans-serif;
+    --fuente-cuerpo: 'Roboto', sans-serif;
+
+    --transicion: all 0.3s ease-in-out;
+    --sombra-tarjeta: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --sombra-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Configuraciones Generales */
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--gris-oscuro);
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--fuente-titulos);
+}
+
+/* Estilos de la Barra de Navegación */
+.navbar-institutional {
+    background-color: var(--verde-institucional) !important;
+    transition: var(--transicion);
+}
+
+.nav-link {
+    transition: var(--transicion);
+}
+
+.nav-link:hover {
+    color: var(--amarillo-institucional) !important;
+}
+
+/* Efectos para Tarjetas (Cards) */
+.card {
+    transition: var(--transicion);
+    box-shadow: var(--sombra-tarjeta);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+/* Botones Personalizados */
+.btn-accent {
+    background-color: var(--amarillo-institucional);
+    color: var(--gris-oscuro);
+    font-weight: 600;
+    border: none;
+    transition: var(--transicion);
+}
+
+.btn-accent:hover {
+    background-color: #f9a825;
+    color: var(--gris-oscuro);
+    transform: translateY(-2px);
+}
+
+/* Transición suave al pasar el cursor por enlaces del pie de página */
+footer a {
+    transition: var(--transicion);
+}
+
+footer a:hover {
+    color: var(--amarillo-institucional) !important;
+    padding-left: 3px;
+}
+
+/* EFECTO HOVER PARA EL MENÚ NOSOTROS Y ESTILOS ACTIVOS */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+.dropdown-item:active, .dropdown-item:focus { 
+    background-color: #2E7D32; 
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trámites y Secretaría - I.E.P. Francisco Vidal Laos</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Tipografías de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2E7D32; box-shadow: 0 2px 10px rgba(0,0,0,0.15);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <img src="../assets/img/vidall.png" alt="Insignia I.E.P. Francisco Vidal Laos" style="height: 45px; width: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <i class="bi bi-shield-fill-check text-warning fs-3" style="display:none;"></i>
+                <span class="fw-bold" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center" style="font-family: 'Poppins', sans-serif;">
+                    <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="nosotros.html" id="navbarNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nosotros
+                        </a>
+                        <ul class="dropdown-menu shadow border-0" aria-labelledby="navbarNosotros">
+                            <li><a class="dropdown-item small" href="nosotros.html#historia"><i class="bi bi-journal-text me-2 text-success"></i> Nuestra Historia</a></li>
+                            <li><a class="dropdown-item small" href="nosotros.html#mision-vision"><i class="bi bi-compass me-2 text-success"></i> Misión, Visión y Valores</a></li>
+                            <li><a class="dropdown-item small" href="nosotros.html#directiva"><i class="bi bi-person-badge me-2 text-success"></i> Plana Directiva y Administrativa</a></li>
+                            <li><a class="dropdown-item small" href="nosotros.html#docentes"><i class="bi bi-mortarboard me-2 text-success"></i> Plana Docente por Cursos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="horarios.html">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link active text-warning fw-semibold" href="tramites.html">Trámites</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                    
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn fw-bold rounded-pill px-3 py-2 text-dark d-inline-flex align-items-center gap-2" href="../sistema/index.html" style="background-color: #FBC02D; border: none;">
+                            <i class="bi bi-person-lock"></i> Acceso al Sistema
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER VERDE PRINCIPAL DE CABECERA -->
+    <header class="py-5 text-white text-center" style="background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(0, 0, 0, 0.8)), #2E7D32; padding-top: 130px !important;">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5" style="font-family: 'Poppins', sans-serif;">Secretaría y Mesa de Partes</h1>
+            <p class="lead opacity-75 mb-0">Consulta de requisitos para matrícula, solicitudes y trámites documentarios</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- 3 BLOQUES SUPERIORES DE INFORMACIÓN -->
+        <div class="row g-4 mb-5">
+            <!-- Bloque 1: Matrícula -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="rounded-circle bg-success text-white p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                            <i class="bi bi-person-plus-fill fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0" style="color: #2E7D32;">Matrícula 1.º de Secundaria</h5>
+                    </div>
+                    <ul class="small text-muted ps-3 mb-0" style="line-height: 1.7;">
+                        <li>Ficha de Matrícula (FUM / SIAGIE).</li>
+                        <li>Copia del DNI del estudiante.</li>
+                        <li>Copia del DNI del Padre/Madre o Apoderado.</li>
+                        <li>Certificado de estudios de Educación Primaria.</li>
+                        <li>Constancia de tamizaje de hemoglobina.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 2: Traslado -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="rounded-circle bg-success text-white p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                            <i class="bi bi-arrow-left-right fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0" style="color: #2E7D32;">Traslado de Matrícula</h5>
+                    </div>
+                    <ul class="small text-muted ps-3 mb-0" style="line-height: 1.7;">
+                        <li>Solicitud de Vacante previa aprobada.</li>
+                        <li>FUT dirigido al Director de la I.E.P.</li>
+                        <li>Ficha Única de Matrícula generada por el SIAGIE.</li>
+                        <li>Certificado de Estudios de años anteriores.</li>
+                        <li>Resolución Directoral de Traslado de origen.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 3: Certificados -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="rounded-circle bg-success text-white p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                            <i class="bi bi-award-fill fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold mb-0" style="color: #2E7D32;">Certificados y Constancias</h5>
+                    </div>
+                    <ul class="small text-muted ps-3 mb-0" style="line-height: 1.7;">
+                        <li>FUT presentado por Mesa de Partes.</li>
+                        <li>Copia del DNI del solicitante.</li>
+                        <li>Recibo de pago por derecho de trámite (si corresponde).</li>
+                        <li>Especificar el año lectivo o grado académico requerido.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO MESA DE PARTES VIRTUAL CON INTEGRACIÓN A WHATSAPP -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                        <div>
+                            <h4 class="fw-bold mb-1" style="color: #2E7D32;">Mesa de Partes Virtual</h4>
+                            <p class="small text-muted mb-0">Llena tus datos para registrar el trámite e iniciar el contacto directo con Secretaría vía WhatsApp.</p>
+                        </div>
+                        <a href="../assets/docs/FUT.pdf" download="FUT_Francisco_Vidal_Laos.pdf" class="btn btn-outline-success btn-sm fw-bold rounded-pill px-3 mt-2 mt-sm-0">
+                            <i class="bi bi-download me-1"></i> Descargar FUT
+                        </a>
+                    </div>
+
+                    <form id="formMesaPartes">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Nombres y Apellidos del Solicitante</label>
+                                <input type="text" id="nombreCompleto" class="form-control rounded-3" placeholder="Ej. Pedro Morales" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">N.° de DNI / CE</label>
+                                <input type="text" id="dniSolicitante" class="form-control rounded-3" placeholder="12345678" required>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Correo Electrónico</label>
+                                <input type="email" id="correoSolicitante" class="form-control rounded-3" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Teléfono de Contacto</label>
+                                <input type="tel" id="telefonoSolicitante" class="form-control rounded-3" placeholder="987654321" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold">Tipo de Trámites</label>
+                            <select id="tipoTramite" class="form-select rounded-3" required>
+                                <option value="" selected disabled>Selecciona el documento o trámite...</option>
+                                <option value="Solicitud de Certificado de Estudios">Solicitud de Certificado de Estudios</option>
+                                <option value="Constancia de Conducta / Vacante">Constancia de Conducta / Vacante</option>
+                                <option value="Justificación de Inasistencia">Justificación de Inasistencia</option>
+                                <option value="Otro Trámite Administrativo">Otro Trámite Administrativo</option>
+                            </select>
+                        </div>
+
+                        <div class="alert alert-warning border-0 small mb-4 rounded-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-info-circle-fill fs-5 text-warning"></i>
+                            <span><strong>Nota:</strong> Al presionar enviar, se abrirá WhatsApp con el resumen de tu trámite para adjuntar la foto o PDF de tu FUT.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-success fw-bold px-4 py-2 rounded-3 text-white d-inline-flex align-items-center gap-2">
+                            <i class="bi bi-whatsapp fs-5"></i> Enviar Solicitud por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESCARGA DIRECTA DE DOCUMENTOS DE GESTIÓN -->
+        <div id="documentos-normativos" class="my-5 pt-3">
+            <div class="text-center mb-4">
+                <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">DESCARGA DIRECTA</span>
+                <h3 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Documentos de Gestión y Normatividad</h3>
+                <p class="text-muted small">Haz clic en los botones para descargar directamente los formatos y reglamentos institucionales en PDF.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- TARJETA 1: DESCARGA DIRECTA FUT -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 text-center bg-light h-100 border-top border-4 border-success">
+                        <div class="mb-3">
+                            <i class="bi bi-file-earmark-pdf-fill text-danger display-4"></i>
+                        </div>
+                        <h5 class="fw-bold" style="color: #2E7D32;">Formulario Único de Trámites (FUT)</h5>
+                        <p class="small text-muted mb-4">Formato oficial requerido para solicitudes de certificados, rectificaciones, justificantes y trámites en Secretaría.</p>
+                        <div class="mt-auto">
+                            <a href="../assets/docs/FUT.pdf" download="FUT_Francisco_Vidal_Laos.pdf" class="btn btn-success fw-bold rounded-pill px-4 shadow-sm">
+                                <i class="bi bi-download me-2"></i> Descargar FUT (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2: DESCARGA DIRECTA REGLAMENTO INTERNO -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 text-center bg-light h-100 border-top border-4 border-warning">
+                        <div class="mb-3">
+                            <i class="bi bi-file-earmark-text-fill text-danger display-4"></i>
+                        </div>
+                        <h5 class="fw-bold" style="color: #2E7D32;">Reglamento Interno (RI)</h5>
+                        <p class="small text-muted mb-4">Documento normativo institucional sobre la convivencia escolar, derechos, deberes, puntualidad y presentación personal.</p>
+                        <div class="mt-auto">
+                            <a href="../assets/docs/FUT.pdf" download="Reglamento_Interno_Vidal_Laos.pdf" class="btn btn-warning fw-bold text-dark rounded-pill px-4 shadow-sm">
+                                <i class="bi bi-download me-2"></i> Descargar Reglamento (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="text-white pt-5 pb-3" style="background-color: #424242; border-top: 4px solid #FBC02D; font-family: 'Roboto', sans-serif;">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</h5>
+                    <p class="small text-white-50">Institución Educativa Pública de nivel secundaria comprometida con la formación integral en Supe Pueblo.</p>
+                    <p class="small text-white-50"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Calle C. Córdova 425, Supe Pueblo, Barranca - Perú</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="nosotros.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Nuestra Historia</a></li>
+                        <li class="mb-2"><a href="servicios.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Servicios Educativos</a></li>
+                        <li class="mb-2"><a href="tramites.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Trámites y Secretaría</a></li>
+                        <li class="mb-2"><a href="../sistema/index.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Acceso al Sistema de Asistencia</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Contacto y Redes</h5>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> (01) 236-4780</p>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> hnorabuenac@gmail.com</p>
+                    <p class="small text-white-50 mb-3"><i class="bi bi-clock-fill text-warning me-2"></i> Lunes a Viernes: 7:30 AM - 3:30 PM</p>
+                    
+                    <div class="d-flex gap-2 align-items-center mt-3 pt-2 border-top border-secondary">
+                        <span class="small text-white-50 me-1">Síguenos:</span>
+                        <a href="https://www.facebook.com/iepfranciscovidal/?locale=es_LA" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@iepfranciscovidal" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center gap-1 fw-bold">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row align-items-center pt-2">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">&copy; 2026 I.E.P. Francisco Vidal Laos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0 text-white-50">Desarrollado en convenio con el <span class="text-warning">IESTP "Víctor Raúl Haya de la Torre"</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle shadow-lg d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; z-index: 9999;" title="Escríbenos a WhatsApp">
+        <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <!-- SCRIPT DE ENVÍO DIRECTO A WHATSAPP -->
+    <script>
+        document.getElementById('formMesaPartes').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 1. Número de WhatsApp de la Secretaría (Cámbialo por el número real)
+            var numeroWhatsApp = "51999999999"; 
+            
+            // 2. Captura de datos del formulario
+            var nombre = document.getElementById('nombreCompleto').value;
+            var dni = document.getElementById('dniSolicitante').value;
+            var correo = document.getElementById('correoSolicitante').value;
+            var telefono = document.getElementById('telefonoSolicitante').value;
+            var tramite = document.getElementById('tipoTramite').value;
+            
+            // 3. Estructuración del mensaje
+            var mensaje = "📌 *NUEVA SOLICITUD DE MESA DE PARTES VIRTUAL*\n\n" +
+                          "👤 *Solicitante:* " + nombre + "\n" +
+                          "🪪 *DNI/CE:* " + dni + "\n" +
+                          "📧 *Correo:* " + correo + "\n" +
+                          "📱 *Teléfono:* " + telefono + "\n" +
+                          "📋 *Trámite Requerido:* " + tramite + "\n\n" +
+                          "📎 *Adjunto:* En breve enviaré el FUT completado por este chat.";
+                          
+            // 4. Redirección automática a WhatsApp
+            var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>

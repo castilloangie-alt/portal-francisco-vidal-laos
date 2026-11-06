@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al Sistema - I.E.P. Francisco Vidal Laos</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos exclusivos del Login -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+
+    <div class="login-card">
+        <!-- Cabecera e Identidad -->
+        <div class="text-center mb-4">
+            <div class="login-icon-box mb-3">
+                <i class="bi bi-shield-lock-fill fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-1" style="color: #2E7D32;">I.E.P. Francisco Vidal Laos</h4>
+            <p class="text-muted small">Sistema Web de Gestión y Control de Asistencia</p>
+        </div>
+
+        <!-- Formulario Visual (Sin conexión a BD en esta fase) -->
+        <form id="loginForm" onsubmit="return false;">
+            <!-- Campo Usuario / DNI -->
+            <div class="mb-3">
+                <label for="username" class="form-label text-dark fw-medium small">Usuario / DNI</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0"><i class="bi bi-person-fill text-success"></i></span>
+                    <input type="text" class="form-control border-start-0 bg-light" id="username" placeholder="Ingrese su DNI o usuario" required>
+                </div>
+            </div>
+
+            <!-- Campo Contraseña -->
+            <div class="mb-4">
+                <label for="password" class="form-label text-dark fw-medium small">Contraseña</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0"><i class="bi bi-key-fill text-success"></i></span>
+                    <input type="password" class="form-control border-start-0 bg-light" id="password" placeholder="••••••••" required>
+                </div>
+            </div>
+
+            <!-- Botón Ingresar -->
+            <button type="submit" class="btn btn-login w-100 py-2 mb-3 shadow-sm">
+                <i class="bi bi-box-arrow-in-right me-2"></i> Ingresar al Sistema
+            </button>
+            
+            <!-- Botón Volver al Portal Web -->
+            <a href="../index.html" class="btn btn-return w-100 py-2 text-decoration-none text-center d-block">
+                <i class="bi bi-arrow-left me-2"></i> Volver al Portal Web
+            </a>
+        </form>
+
+        <!-- Pie de tarjeta -->
+        <div class="text-center mt-4 pt-3 border-top">
+            <p class="text-muted mb-0" style="font-size: 0.75rem;">Módulo de Asistencia v1.0 | I.E.S.T.P. "VRHT"</p>
+        </div>
+    </div>
+
+</body>
+</html>

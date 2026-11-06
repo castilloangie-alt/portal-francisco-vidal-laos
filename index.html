@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.E.P. Francisco Vidal Laos - Supe Pueblo</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Tipografías de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2E7D32; box-shadow: 0 2px 10px rgba(0,0,0,0.15);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/img/vidall.png" alt="Insignia I.E.P. Francisco Vidal Laos" style="height: 45px; width: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                <i class="bi bi-shield-fill-check text-warning fs-3" style="display:none;"></i>
+                <span class="fw-bold" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center" style="font-family: 'Poppins', sans-serif;">
+                    <li class="nav-item"><a class="nav-link active text-warning fw-semibold" href="index.html">Inicio</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="pages/nosotros.html" id="navbarNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Nosotros
+                       </a>
+                        <ul class="dropdown-menu shadow border-0" aria-labelledby="navbarNosotros">
+                            <li><a class="dropdown-item small" href="pages/nosotros.html#historia"><i class="bi bi-journal-text me-2 text-success"></i> Nuestra Historia</a></li>
+                            <li><a class="dropdown-item small" href="pages/nosotros.html#mision-vision"><i class="bi bi-compass me-2 text-success"></i> Misión, Visión y Valores</a></li>
+                            <li><a class="dropdown-item small" href="pages/nosotros.html#directiva"><i class="bi bi-person-badge me-2 text-success"></i> Plana Directiva y Administrativa</a></li>
+                            <li><a class="dropdown-item small" href="pages/nosotros.html#docentes"><i class="bi bi-mortarboard me-2 text-success"></i> Plana Docente por Cursos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link text-white" href="pages/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pages/horarios.html">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pages/tramites.html">Trámites</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pages/noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pages/galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="pages/contacto.html">Contacto</a></li>
+                    
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn fw-bold rounded-pill px-3 py-2 text-dark d-inline-flex align-items-center gap-2" href="sistema/index.html" style="background-color: #FBC02D; border: none;">
+                            <i class="bi bi-person-lock"></i> Acceso al Sistema
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER PRINCIPAL CON FRASE CÉLEBRE -->
+<!-- BANNER PRINCIPAL AMPLIO CON IMAGEN DE FONDO -->
+<section class="text-center text-white p-0 position-relative" style="background: linear-gradient(rgba(27, 94, 32, 0.75), rgba(0, 0, 0, 0.8)), url('assets/img/colegioporton.png') no-repeat center center / cover !important; min-height: 80vh; display: flex; align-items: center; justify-content: center; margin-top: 65px;">
+    <div class="container py-5 my-4">
+        <span class="badge px-3 py-2 mb-3 text-dark fw-bold shadow" style="background-color: #FBC02D; font-family: 'Poppins', sans-serif;">UGEL N.° 16 - BARRANCA</span>
+        
+        <h1 class="display-3 fw-bold mb-3 text-shadow-custom" style="font-family: 'Poppins', sans-serif; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);">
+            Institución Educativa Pública <br>
+            <span class="text-warning">"Francisco Vidal Laos"</span>
+        </h1>
+        
+        <p class="lead mb-4 text-shadow-custom text-light fs-4" style="max-width: 850px; margin: 0 auto; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);">
+            Formando la juventud de Supe Pueblo con fe, disciplina, moral y capacidad técnica.
+        </p>
+
+        <div class="my-4">
+            <h3 class="frase-celebre fs-3" style="font-family: 'Poppins', Georgia, serif; font-style: italic; color: #FBC02D; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); border-top: 2px solid #FBC02D; border-bottom: 2px solid #FBC02D; display: inline-block; padding: 10px 30px;">
+                “Entrad para aprender y Salid para servir”
+            </h3>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4 pt-2">
+            <a href="pages/nosotros.html" class="btn btn-warning btn-lg fw-bold rounded-pill px-4 text-dark shadow">
+                <i class="bi bi-info-circle-fill me-2"></i> Conoce el Colegio
+            </a>
+            <a href="pages/tramites.html" class="btn btn-outline-light btn-lg fw-bold rounded-pill px-4 shadow">
+                <i class="bi bi-file-earmark-pdf-fill me-2"></i> Trámites y FUT
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- 1. CINTÓN VERDE DE ESTADÍSTICAS INSTITUCIONALES (AHORA VA PRIMERO) -->
+    <section class="py-4 text-white shadow-sm" style="background-color: #2E7D32;">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold mb-0 text-warning display-5" style="font-family: 'Poppins', sans-serif;">800+</h2>
+                    <p class="small mb-0 text-white-50">Estudiantes Matriculados</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold mb-0 text-warning display-5" style="font-family: 'Poppins', sans-serif;">31</h2>
+                    <p class="small mb-0 text-white-50">Secciones de Clase</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold mb-0 text-warning display-5" style="font-family: 'Poppins', sans-serif;">62</h2>
+                    <p class="small mb-0 text-white-50">Docentes Colegiados</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold mb-0 text-warning display-5" style="font-family: 'Poppins', sans-serif;">11</h2>
+                    <p class="small mb-0 text-white-50">Personal Administrativo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container py-5">
+
+        <!-- 2. SERVICIOS EN LÍNEA RÁPIDOS -->
+        <section class="mb-5">
+            <div class="text-center mb-4">
+                <h4 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Servicios en Línea para la Comunidad</h4>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <a href="pages/tramites.html" class="card border-0 shadow-sm rounded-4 p-3 text-center text-decoration-none h-100 bg-white">
+                        <i class="bi bi-file-earmark-text text-success fs-1 mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">Mesa de Partes (FUT)</h6>
+                        <small class="text-muted">Trámites y Matrículas</small>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="pages/horarios.html" class="card border-0 shadow-sm rounded-4 p-3 text-center text-decoration-none h-100 bg-white">
+                        <i class="bi bi-calendar-week text-success fs-1 mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">Horarios por Grado</h6>
+                        <small class="text-muted">Turno Mañana y Tarde</small>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="pages/servicios.html" class="card border-0 shadow-sm rounded-4 p-3 text-center text-decoration-none h-100 bg-white">
+                        <i class="bi bi-laptop text-success fs-1 mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">Aulas AIP / Cómputo</h6>
+                        <small class="text-muted">Inclusión Tecnológica</small>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="sistema/index.html" class="card border-0 shadow-sm rounded-4 p-3 text-center text-decoration-none h-100 bg-white">
+                        <i class="bi bi-person-check text-warning fs-1 mb-2"></i>
+                        <h6 class="fw-bold text-dark mb-1">Control Asistencia</h6>
+                        <small class="text-muted">Acceso a Docentes</small>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. RESUMEN: NUESTRA HISTORIA E IDENTIDAD (JALA INFORMACIÓN DE NOSOTROS) -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 bg-white">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">RESEÑA HISTÓRICA</span>
+                    <h3 class="fw-bold mb-3" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">60+ Años Educando con Excelencia</h3>
+                    <p class="text-muted" style="line-height: 1.8;">
+                        Fundada para atender las necesidades educativas de Supe Pueblo,  
+                        La Institución Educativa Pública "Francisco Vidal Laos", fue creada mediante resolución Suprema Nº 763 de
+                        fecha 14 de julio de 1964 y se ha consolidado como la institución emblemática de nivel secundaria en la provincia 
+                        de Barranca. Formamos ciudadanos íntegros, fortalecidos en valores éticos, disciplina y capacidades técnicas. Desde la 
+                        fecha hasta la actualidad por sus aulas han pasado alumnos de toda 
+                        la Provincia que hoy nos enorgullecen ocupando puestos importantes en la Sociedad, siendo auténticos representantes 
+                        de nuestros antepasados, la legendaria CULTURA CARAL – SUPE. Por sus aulas también pasaron Directores y Docentes que 
+                        dejaron huella de calidad profesional engrandeciendo el prestigio de nuestra institución. Actualmente, la Dirección de la 
+                        Institución está bajo la responsabilidad del Lic. Héctor Norabuena Cervantes  
+                    </p>
+                    <a href="pages/nosotros.html" class="btn btn-outline-success fw-bold rounded-pill px-4 mt-2">
+                        Leer Historia Completa y Plana Docente <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="assets/img/vidall.png" alt="Insignia Institucional" class="img-fluid p-3" style="max-height: 240px;" onerror="this.src='https://via.placeholder.com/240?text=Insignia+Vidal+Laos';">
+                </div>
+            </div>   
+        </section>
+
+        <!-- 4. CONVIVENCIA ESCOLAR Y PRESENTACIÓN PERSONAL -->
+        <section class="mb-5">
+            <div class="text-center mb-4">
+                <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">DISCIPLINA Y NORMATIVA INSTITUCIONAL</span>
+                <h3 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Convivencia Escolar y Presentación Personal</h3>
+                <p class="text-muted small">Lineamientos generales sobre uniforme, puntualidad e indicaciones para el ingreso diario.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Uniforme -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white border-top border-4 border-success">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bi bi-person-badge-fill text-success fs-4"></i>
+                            <h5 class="fw-bold mb-0" style="color: #2E7D32;">Uniforme Reglamentario</h5>
+                        </div>
+                        <ul class="small text-muted ps-3 mb-0" style="line-height: 1.7;">
+                            <li><strong>Varones:</strong> Pantalón plomo, camisa blanca, corbata y corte de cabello escolar tradicional.</li>
+                            <li><strong>Mujeres:</strong> Falda/pantalón institucional, blusa blanca, cabello recogido.</li>
+                            <li><strong>Educación Física:</strong> Buzo oficial únicamente los días asignados.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Puntualidad -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white border-top border-4 border-warning">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bi bi-clock-history text-warning fs-4"></i>
+                            <h5 class="fw-bold mb-0" style="color: #2E7D32;">Puntualidad e Ingreso</h5>
+                        </div>
+                        <ul class="small text-muted ps-3 mb-0" style="line-height: 1.7;">
+                            <li><strong>Turno Mañana:</strong> Puerta abierta 7:15 AM. Cierre de portón a las 7:45 AM.</li>
+                            <li><strong>Turno Tarde:</strong> Puerta abierta 12:45 PM. Cierre de portón a las 1:15 PM.</li>
+                            <li><strong>Tardanzas:</strong> Registro obligatorio en auxiliaría con papeleta.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Restricciones -->
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white border-top border-4 border-danger">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <i class="bi bi-exclamation-triangle-fill text-danger fs-4"></i>
+                            <h5 class="fw-bold mb-0" style="color: #2E7D32;">Restricciones y Prohibiciones</h5>
+                        </div>
+                        <ul class="small text-muted ps-3 mb-0" style="line-height: 1.7;">
+                            <li><strong>Celulares y Equipos:</strong> Prohibido el uso durante horas de clase salvo indicación en AIP.</li>
+                            <li><strong>Accesorios:</strong> No se permite joyería ostentosa, gorras ni tiras no institucionales.</li>
+                            <li><strong>Objetos Ajenos:</strong> Prohibido el ingreso de juguetes u objetos punzocortantes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="pages/tramites.html#documentos-normativos" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                    <i class="bi bi-file-earmark-pdf me-1"></i> Descargar Reglamento Interno Completo (RI - MINEDU)
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. MUESTRA DE GALERÍA (JALA IMÁGENES O VISTA DE GALERÍA) -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mb-5 bg-white">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                <div>
+                    <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">VIDA INSTITUCIONAL</span>
+                    <h3 class="fw-bold mb-0" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Galería de Actividades</h3>
+                </div>
+                <a href="pages/galeria.html" class="btn btn-success fw-bold rounded-pill px-4 mt-2 mt-sm-0">
+                    Ver Galería Completa <i class="bi bi-images ms-1"></i>
+                </a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="rounded-3 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="assets/img/aniversariovidall.png" alt="Actividad Institucional 1" class="w-100 h-100 object-fit-cover" onerror="this.src='https://via.placeholder.com/400x300/2e7d32/ffffff?text=Aniversario+Institucional';">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-3 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="assets/img/OLIMPIADASS.png" alt="Actividad Institucional 2" class="w-100 h-100 object-fit-cover" onerror="this.src='https://via.placeholder.com/400x300/1b5e20/ffffff?text=Talleres+EPT';">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-3 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="assets/img/DESFILEESCOLAR.png" alt="Actividad Institucional 3" class="w-100 h-100 object-fit-cover" onerror="this.src='https://via.placeholder.com/400x300/fbc02d/000000?text=Desfile+Patrio';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. BANDEROLA EXCLUSIVA DE ACCESO DOCENTE -->
+        <section class="card border-0 shadow-sm rounded-4 p-4 text-white" style="background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <div>
+                    <h5 class="fw-bold mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-shield-lock-fill text-warning fs-4"></i> Acceso Exclusivo para Personal Institucional
+                    </h5>
+                    <p class="small text-white-50 mb-0">Docentes y administrativos de la I.E.P. Francisco Vidal Laos pueden registrar su asistencia diaria y consultar reportes en el módulo digital.</p>
+                </div>
+                <a href="sistema/index.html" class="btn btn-warning fw-bold text-dark rounded-pill px-4 py-2">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Ingresar al Sistema
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL POP-UP COMUNICADO URGENTE -->
+    <div class="modal fade" id="modalComunicadoUrgente" tabindex="-1" aria-labelledby="modalComunicadoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0 shadow-lg">
+                <div class="modal-header text-white border-0 py-3" style="background-color: #2E7D32;">
+                    <h5 class="modal-title fw-bold d-flex align-items-center gap-2" id="modalComunicadoLabel">
+                        <i class="bi bi-megaphone-fill text-warning fs-4"></i> Comunicado Oficial Institucional
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-0 text-center bg-dark">
+                    <img src="assets/img/comunicado.png" alt="Comunicado Urgente Matrícula" class="img-fluid w-100" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x500/1b5e20/ffffff?text=I.E.P.+FRANCISCO+VIDAL+LAOS+%5Cn+PROCESO+DE+MATR%C3%8DCULA+2026';">
+                </div>
+                <div class="modal-footer bg-light border-0 justify-content-between">
+                    <span class="small text-muted"><i class="bi bi-clock me-1"></i> Publicado por la Dirección Institucional</span>
+                    <button type="button" class="btn btn-success fw-bold rounded-pill px-4" data-bs-dismiss="modal">
+                        Entendido / Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="text-white pt-5 pb-3" style="background-color: #424242; border-top: 4px solid #FBC02D; font-family: 'Roboto', sans-serif;">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</h5>
+                    <p class="small text-white-50">Institución Educativa Pública de nivel secundaria comprometida con la formación integral en Supe Pueblo.</p>
+                    <p class="small text-white-50"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Calle C. Córdova 425, Supe Pueblo, Barranca - Perú</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="pages/nosotros.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Nuestra Historia</a></li>
+                        <li class="mb-2"><a href="pages/servicios.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Servicios Educativos</a></li>
+                        <li class="mb-2"><a href="pages/tramites.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Trámites y Secretaría</a></li>
+                        <li class="mb-2"><a href="sistema/index.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Acceso al Sistema de Asistencia</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Contacto y Redes</h5>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> (01) 236-4780</p>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> hnorabuenac@gmail.com</p>
+                    <p class="small text-white-50 mb-3"><i class="bi bi-clock-fill text-warning me-2"></i> Lunes a Viernes: 7:30 AM - 3:30 PM</p>
+                    
+                    <div class="d-flex gap-2 align-items-center mt-3 pt-2 border-top border-secondary">
+                        <span class="small text-white-50 me-1">Síguenos:</span>
+                        <a href="https://www.facebook.com/iepfranciscovidal/?locale=es_LA" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@iepfranciscovidal" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center gap-1 fw-bold">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row align-items-center pt-2">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">&copy; 2026 I.E.P. Francisco Vidal Laos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0 text-white-50">Desarrollado en convenio con el <span class="text-warning">IESTP "Víctor Raúl Haya de la Torre"</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle shadow-lg d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; z-index: 9999;" title="Escríbenos a WhatsApp">
+        <i class="bi bi-whatsapp fs-2"></i>
+    </a>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- SCRIPT POP-UP AUTOMÁTICO -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var modalComunicado = new bootstrap.Modal(document.getElementById('modalComunicadoUrgente'));
+            modalComunicado.show();
+        });
+    </script>
+</body>
+</html>

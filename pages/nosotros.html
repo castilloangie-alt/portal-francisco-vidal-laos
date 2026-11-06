@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - I.E.P. Francisco Vidal Laos</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Tipografías de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    
+    <style>
+    html { scroll-behavior: smooth; }
+    
+    /* Despliegue automático de menú en hover */
+    @media (min-width: 992px) {
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+    }
+    .dropdown-item:active, .dropdown-item:focus { 
+        background-color: #2E7D32; 
+    }
+
+    /* ESTILOS PERSONALIZADOS PARA LAS PESTAÑAS DE DOCENTES (CAMBIO DE AZUL A VERDE Y AMARILLO) */
+    .nav-pills .nav-link {
+        color: #2E7D32 !important; /* Texto verde cuando no está seleccionado */
+        background-color: #E8F5E9; /* Fondo verde claro suave */
+        border: 1px solid #A5D6A7;
+    }
+    .nav-pills .nav-link:hover {
+        background-color: #C8E6C9;
+        color: #1b5e20 !important;
+    }
+    .nav-pills .nav-link.active {
+        background-color: #2E7D32 !important; /* Fondo verde oscuro activo */
+        color: #FFFFFF !important; /* Texto blanco en activo */
+        border-color: #2E7D32;
+        box-shadow: 0 4px 6px rgba(46, 125, 50, 0.2);
+    }
+
+    .docente-card img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border: 3px solid #2E7D32;
+    }
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2E7D32; box-shadow: 0 2px 10px rgba(0,0,0,0.15);">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+            <img src="../assets/img/vidall.png" alt="Insignia I.E.P. Francisco Vidal Laos" style="height: 45px; width: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+            <i class="bi bi-shield-fill-check text-warning fs-3" style="display:none;"></i>
+            <span class="fw-bold" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center" style="font-family: 'Poppins', sans-serif;">
+                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active text-warning fw-semibold" href="nosotros.html" id="navbarNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nosotros
+                    </a>
+                    <ul class="dropdown-menu shadow border-0" aria-labelledby="navbarNosotros">
+                        <li><a class="dropdown-item small" href="#historia"><i class="bi bi-journal-text me-2 text-success"></i> Nuestra Historia</a></li>
+                        <li><a class="dropdown-item small" href="#mision-vision"><i class="bi bi-compass me-2 text-success"></i> Misión, Visión y Valores</a></li>
+                        <li><a class="dropdown-item small" href="#directiva"><i class="bi bi-person-badge me-2 text-success"></i> Plana Directiva y Administrativa</a></li>
+                        <li><a class="dropdown-item small" href="#docentes"><i class="bi bi-mortarboard me-2 text-success"></i> Plana Docente por Cursos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item small" href="#campus"><i class="bi bi-building me-2 text-success"></i> Nuestro Campus y Ubicación</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="horarios.html">Horarios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tramites.html">Trámites</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                    <a class="btn fw-bold rounded-pill px-3 py-2 text-dark d-inline-flex align-items-center gap-2" href="../sistema/index.html" style="background-color: #FBC02D; border: none;">
+                        <i class="bi bi-person-lock"></i> Acceso al Sistema
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- ENCABEZADO -->
+    <section class="py-5 text-white text-center" style="background: linear-gradient(rgba(46, 125, 50, 0.92), rgba(0, 0, 0, 0.85)), #2E7D32; padding-top: 125px !important;">
+        <div class="container">
+            <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">MÁS DE 60 AÑOS DE TRAYECTORIA INSTITUCIONAL</span>
+            <h1 class="fw-bold display-5 mb-2" style="font-family: 'Poppins', sans-serif;">Nuestra Comunidad Educativa</h1>
+            <p class="lead text-white-50 mb-4">62 docentes capacitados, 11 administrativos y equipo directivo al servicio de Supe Pueblo</p>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+                <a href="#historia" class="btn btn-sm btn-outline-light rounded-pill px-3"><i class="bi bi-clock-history me-1"></i> Historia</a>
+                <a href="#mision-vision" class="btn btn-sm btn-outline-light rounded-pill px-3"><i class="bi bi-bullseye me-1"></i> Misión y Visión</a>
+                <a href="#directiva" class="btn btn-sm btn-outline-light rounded-pill px-3"><i class="bi bi-person-gear me-1"></i> Directivos y Administrativos (11)</a>
+                <a href="#docentes" class="btn btn-sm btn-outline-light rounded-pill px-3"><i class="bi bi-award me-1"></i> Plana Docente (62)</a>
+                <a href="#campus" class="btn btn-sm btn-warning text-dark fw-bold rounded-pill px-3"><i class="bi bi-geo-alt me-1"></i> Campus y GPS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. RESEÑA HISTÓRICA INTERACTIVA -->
+    <section id="historia" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">HISTORIA E IDENTIDAD</span>
+                    <h2 class="fw-bold mb-3" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Legado del "Primer Soldado del Perú"</h2>
+                    <p class="text-muted mb-4" style="line-height: 1.8;">
+                        Nuestra institución lleva con orgullo el nombre del Prócer de la Independencia <strong>D. Juan Francisco de Vidal La Hoz</strong> (1800-1863), ilustre supeño recordado como el <em>"Primer Soldado del Perú"</em>.
+                    </p>
+                    
+                    <div class="accordion shadow-sm rounded-3" id="historiaAccordion">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#historia1">
+                                    <i class="bi bi-flag-fill me-2 text-warning"></i> 1800 – El Personaje Ilustre
+                                </button>
+                            </h2>
+                            <div id="historia1" class="accordion-collapse collapse show" data-bs-parent="#historiaAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Nace en Supe D. Juan Francisco de Vidal La Hoz. Su destacado servicio en la gesta emancipadora e historia republicana del Perú inspira nuestro lema institucional: <strong>“¡Entrad para Aprender, Salid para Servir!”</strong>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#historia2">
+                                    <i class="bi bi-file-earmark-check-fill me-2 text-warning"></i> 14 de Julio de 1964 – Fundación Oficial
+                                </button>
+                            </h2>
+                            <div id="historia2" class="accordion-collapse collapse" data-bs-parent="#historiaAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Mediante <strong>Resolución Suprema N.º 763</strong>, se crea oficialmente el colegio como el centro de educación secundaria referente del distrito de Supe Pueblo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#historia3">
+                                    <i class="bi bi-laptop me-2 text-warning"></i> Presente y Transformación Digital
+                                </button>
+                            </h2>
+                            <div id="historia3" class="accordion-collapse collapse" data-bs-parent="#historiaAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Actualmente albergamos a más de 800 estudiantes distribuídos en 31 secciones, contando con un equipo de 62 docentes y 11 personal administrativo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <div class="p-4 bg-light rounded-3 border-start border-4 shadow-sm" style="border-color: #2E7D32 !important;">
+                        <img src="../assets/img/vidal2.png" alt="Insignia Institucional" class="img-fluid mb-3" style="max-height: 180px;" onerror="this.src='https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=600&auto=format&fit=crop'">
+                        <h4 class="fw-bold mb-1" style="color: #2E7D32;">¡Vidal Siempre Adelante!</h4>
+                        <p class="text-muted small mb-0">Forjando la juventud supeña con disciplina, moral y capacidad técnica desde hace más de 60 años.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE PRESENTACIÓN HISTÓRICA INSTITUCIONAL -->
+<!-- SECCIÓN DE PRESENTACIÓN OFICIAL DE LA INSTITUCIÓN -->
+        <!-- SECCIÓN DE PRESENTACIÓN OFICIAL DE LA INSTITUCIÓN -->
+       <section id="presentacion-oficial" class="container mt-5 mb-5">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white border-start border-5 border-success">
+                
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <span class="badge px-3 py-2 text-dark fw-bold" style="background-color: #FBC02D; font-family: 'Poppins', sans-serif;">
+                        RESEÑA HISTÓRICA
+                    </span>
+                </div>
+                
+                <h2 class="fw-bold mb-4" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">
+                    Presentación Oficial de la Institución
+                </h2>
+
+                <div class="text-secondary" style="line-height: 1.85; text-align: justify; font-family: 'Roboto', sans-serif;">
+                    <p class="mb-3">
+                        La <strong style="color: #2E7D32;">Institución Educativa Pública "Francisco Vidal Laos"</strong> fue creada mediante Resolución Suprema N.° 763 de fecha <strong>14 de julio de 1964</strong>. Desde dicha fecha hasta la actualidad, por sus aulas han pasado generaciones de estudiantes de toda la provincia que hoy nos enorgullecen ocupando cargos e importantes posiciones en la sociedad, siendo auténticos representantes de nuestros antepasados y de la legendaria <strong style="color: #2E7D32;">CULTURA CARAL – SUPE</strong>.
+                    </p>
+                    
+                    <p class="mb-3">
+                        Por nuestras instalaciones también han dejado huella directores y docentes de notable calidad profesional que han engrandecido el prestigio de nuestra institución. Actualmente, la Dirección de la Institución lidera este compromiso integral con la comunidad educativa.
+                    </p>
+
+                    <p class="mb-4">
+                        Atendemos a nuestra población escolar distribuida en diversas secciones en los turnos mañana y tarde. Somos docentes comprometidos con la formación integral, capacitados y actualizados en diversas estrategias de enseñanza-aprendizaje con el propósito de generar aprendizajes significativos y valores en los alumnos vidalinos. Asimismo, en el área de <strong style="color: #2E7D32;">Educación para el Trabajo (EPT)</strong> y nuevas tecnologías, contamos con laboratorios de cómputo y Aulas de Innovación Pedagógica (AIP) para preparar a nuestros estudiantes ante los retos del mundo globalizado.
+                    </p>
+                </div>
+
+                <div class="p-3 rounded-3 text-center mt-2" style="background-color: #f1f8e9; border-left: 4px solid #FBC02D;">
+                    <span class="small text-muted fw-bold d-block mb-1" style="letter-spacing: 1px;">NUESTRO LEMA INSTITUCIONAL</span>
+                    <h4 class="fw-bold mb-0" style="color: #2E7D32; font-family: 'Poppins', Georgia, serif; font-style: italic;">
+                        “ENTRAD PARA APRENDER Y SALID PARA SERVIR”
+                    </h4>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <!-- 2. MISIÓN, VISIÓN Y VALORES -->
+    <section id="mision-vision" class="py-5" style="background-color: #F5F5F5;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">FILOSOFÍA INSTITUCIONAL</span>
+                <h2 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Misión, Visión y Valores</h2>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 p-4 shadow-sm rounded-3 bg-white">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 50px; height: 50px; background-color: #2E7D32;">
+                                <i class="bi bi-compass-fill fs-4"></i>
+                            </div>
+                            <h4 class="fw-bold m-0" style="color: #2E7D32;">Nuestra Misión</h4>
+                        </div>
+                        <p class="text-muted small mb-0" style="line-height: 1.8;">
+                            Brindar una educación secundaria pública de calidad, con enfoque científico, humanístico y formación técnica productiva (EPT), desarrollando competencias digitales, morales y ciudadanas para la preparación superior y laboral de nuestros estudiantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 p-4 shadow-sm rounded-3 bg-white">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 50px; height: 50px; background-color: #2E7D32;">
+                                <i class="bi bi-eye-fill fs-4"></i>
+                            </div>
+                            <h4 class="fw-bold m-0" style="color: #2E7D32;">Nuestra Visión</h4>
+                        </div>
+                        <p class="text-muted small mb-0" style="line-height: 1.8;">
+                            Ser consolidados como la institución educativa pública líder de la Región Lima Provincias, destacada por la excelencia de sus egresados, la inclusión digital, el fortalecimiento de los talleres técnicos y el compromiso socioambiental de la comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-4 rounded-3 bg-white">
+                <h5 class="fw-bold mb-3 text-center" style="color: #2E7D32;"><i class="bi bi-star-fill text-warning me-2"></i> Valores que Practicamos</h5>
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-md-2 me-auto ms-auto">
+                        <div class="p-2 bg-light rounded border-bottom border-3 border-success">
+                            <i class="bi bi-heart-fill text-success fs-3 mb-1 d-block"></i>
+                            <strong class="small">Respeto</strong>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 me-auto ms-auto">
+                        <div class="p-2 bg-light rounded border-bottom border-3 border-success">
+                            <i class="bi bi-check-circle-fill text-success fs-3 mb-1 d-block"></i>
+                            <strong class="small">Responsabilidad</strong>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 me-auto ms-auto">
+                        <div class="p-2 bg-light rounded border-bottom border-3 border-success">
+                            <i class="bi bi-shield-lock-fill text-success fs-3 mb-1 d-block"></i>
+                            <strong class="small">Honestidad</strong>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 me-auto ms-auto">
+                        <div class="p-2 bg-light rounded border-bottom border-3 border-success">
+                            <i class="bi bi-people-fill text-success fs-3 mb-1 d-block"></i>
+                            <strong class="small">Trabajo en Equipo</strong>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 me-auto ms-auto">
+                        <div class="p-2 bg-light rounded border-bottom border-3 border-success">
+                            <i class="bi bi-flag-fill text-success fs-3 mb-1 d-block"></i>
+                            <strong class="small">Patriotismo</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PLANA DIRECTIVA Y ADMINISTRATIVA (11 PERSONAL) -->
+    <section id="directiva" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">11 ADMINISTRATIVOS Y DIRECTIVOS</span>
+                <h2 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">Plana Directiva y Personal Administrativo</h2>
+                <p class="text-muted">Equipo de gestión institucional, soporte pedagógico, laboratorio, tecnología y mantenimiento.</p>
+            </div>
+
+            <!-- Equipo Directivo Principal -->
+            <h5 class="fw-bold text-success mb-4 border-start border-4 border-success ps-2" style="font-family: 'Poppins', sans-serif;">Equipo de Dirección</h5>
+            <div class="row g-4 mb-5 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-3 p-4 h-100 text-center bg-light docente-card">
+                        <img src="../assets/img/director.png" class="rounded-circle mx-auto mb-3 shadow-sm" alt="Director General">
+                        <h5 class="fw-bold mb-1 text-dark">Mg. Director del Plantel</h5>
+                        <span class="badge bg-success mb-2">Director General</span>
+                        <p class="small text-muted mb-0">Representante legal y líder de la gestión educativa institucional en Supe Pueblo.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-3 p-4 h-100 text-center bg-light docente-card">
+                        <img src="../assets/img/subcarmen.png" class="rounded-circle mx-auto mb-3 shadow-sm" alt="Subdirectora Mañana">
+                        <h5 class="fw-bold mb-1 text-dark">Lic. Subdirectora T.M.</h5>
+                        <span class="badge bg-success mb-2">Subdirección Turno Mañana</span>
+                        <p class="small text-muted mb-0">Coordinación pedagógica y seguimiento en aula para el turno matutino.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-3 p-4 h-100 text-center bg-light docente-card">
+                        <img src="../assets/img/subcecilia.png" class="rounded-circle mx-auto mb-3 shadow-sm" alt="Subdirector Tarde">
+                        <h5 class="fw-bold mb-1 text-dark">Lic. Subdirector T.T.</h5>
+                        <span class="badge bg-success mb-2">Subdirección Turno Tarde</span>
+                        <p class="small text-muted mb-0">Supervisión académica y acompañamiento del turno vespertino.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Equipo Administrativo (Exactos 11 Cargos) -->
+            <h5 class="fw-bold text-success mb-4 border-start border-4 border-success ps-2" style="font-family: 'Poppins', sans-serif;">Cuerpo Administrativo y de Soporte (11 Integrantes)</h5>
+            <div class="row g-3">
+                <!-- 1. Secretaria -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 bg-white border rounded-3 shadow-sm h-100 d-flex align-items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;" alt="Secretaría">
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Secretaría General</h6>
+                            <small class="text-success fw-bold">(1 Personal)</small>
+                            <small class="text-muted d-block" style="font-size: 0.75rem;">FUT, Matrículas y Tramitología SIAGIE</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Auxiliar de Biblioteca -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 bg-white border rounded-3 shadow-sm h-100 d-flex align-items-center gap-3">
+                        <img src="../assets/img/manrique.png" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;" alt="Biblioteca">
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Auxiliar de Biblioteca</h6>
+                            <small class="text-success fw-bold">(1 Personal)</small>
+                            <small class="text-muted d-block" style="font-size: 0.75rem;">Gestión del acervo bibliográfico y lecturas</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Auxiliar de Laboratorio -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 bg-white border rounded-3 shadow-sm h-100 d-flex align-items-center gap-3">
+                        <img src="../assets/img/hilda.png" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;" alt="Laboratorio">
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Auxiliar de Laboratorio</h6>
+                            <small class="text-success fw-bold">(1 Personal)</small>
+                            <small class="text-muted d-block" style="font-size: 0.75rem;">Soporte en reactivos y experimentos de C.T.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Personal de AIP -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 bg-white border rounded-3 shadow-sm h-100 d-flex align-items-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;" alt="AIP">
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Personal de AIP / Cómputo</h6>
+                            <small class="text-success fw-bold">(2 Personales)</small>
+                            <small class="text-muted d-block" style="font-size: 0.75rem;">Soporte técnico a Aulas de Innovación Pedagógica</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Mantenimiento y Limpieza -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 bg-white border rounded-3 shadow-sm h-100 d-flex align-items-center gap-3">
+                        <img src="../assets/img/cosme.png" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;" alt="Mantenimiento">
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Limpieza y Mantenimiento</h6>
+                            <small class="text-success fw-bold">(4 Personales)</small>
+                            <small class="text-muted d-block" style="font-size: 0.75rem;">Conservación, desinfección y orden del campus</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Guardianía -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-3 bg-white border rounded-3 shadow-sm h-100 d-flex align-items-center gap-3">
+                        <img src="../assets/img/mary.png" class="rounded-circle" style="width: 55px; height: 55px; object-fit: cover;" alt="Guardianía">
+                        <div>
+                            <h6 class="fw-bold m-0 text-dark">Personal de Guardianía</h6>
+                            <small class="text-success fw-bold">(2 Personales)</small>
+                            <small class="text-muted d-block" style="font-size: 0.75rem;">Seguridad perimetral y resguardo de bienes</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PLANA DOCENTE OFICIAL (62 PROFESORES) POR ÁREAS -->
+    <!-- 4. PLANA DOCENTE COMPLETA (NOMINAL POR ÁREAS) -->
+    <section id="docentes" class="py-5" style="background-color: #F5F5F5;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge px-3 py-2 mb-2 text-dark fw-bold" style="background-color: #FBC02D;">NUESTRA PLANA DOCENTE</span>
+                <h2 class="fw-bold" style="color: #2E7D32; font-family: 'Poppins', sans-serif;">62 Docentes Colegiados y Especialistas</h2>
+                <p class="text-muted">Conoce a los profesores encargados de la formación académica en las 10 áreas curriculares.</p>
+            </div>
+
+            <!-- Menú de Pestañas por Área Curricular -->
+            <ul class="nav nav-pills justify-content-center mb-4 gap-2 flex-wrap" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-semibold btn-sm px-3" id="pills-mat-tab" data-bs-toggle="pill" data-bs-target="#pills-mat" type="button" role="tab"><i class="bi bi-calculator me-1"></i> Matemática</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold btn-sm px-3" id="pills-com-tab" data-bs-toggle="pill" data-bs-target="#pills-com" type="button" role="tab"><i class="bi bi-book me-1"></i> Comunicación</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold btn-sm px-3" id="pills-cyt-tab" data-bs-toggle="pill" data-bs-target="#pills-cyt" type="button" role="tab"><i class="bi bi-funnel me-1"></i> Ciencia y Tech</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold btn-sm px-3" id="pills-soc-tab" data-bs-toggle="pill" data-bs-target="#pills-soc" type="button" role="tab"><i class="bi bi-globe me-1"></i> CC.SS. y DPCC</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold btn-sm px-3" id="pills-ept-tab" data-bs-toggle="pill" data-bs-target="#pills-ept" type="button" role="tab"><i class="bi bi-tools me-1"></i> Talleres EPT</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold btn-sm px-3" id="pills-ing-tab" data-bs-toggle="pill" data-bs-target="#pills-ing" type="button" role="tab"><i class="bi bi-translate me-1"></i> Inglés y Arte</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-semibold btn-sm px-3" id="pills-ef-tab" data-bs-toggle="pill" data-bs-target="#pills-ef" type="button" role="tab"><i class="bi bi-dribbble me-1"></i> Ed. Física y Religión</button>
+                </li>
+            </ul>
+
+            <!-- Contenido de las Pestañas (Docentes con Nombre y Foto) -->
+            <div class="tab-content" id="pills-tabContent">
+                
+                <!-- Pestaña 1: Matemática -->
+                <div class="tab-pane fade show active" id="pills-mat" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/matematica.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Elena Vásquez M.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Coordinadora de Área</small>
+                                <small class="text-muted">Álgebra y Raz. Matemático</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/matematica2.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Carlos Ruiz P.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente Colegiado</small>
+                                <small class="text-muted">Geometría y Trigonometría</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/matematica3.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Javier Sifuentes L.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente Colegiado</small>
+                                <small class="text-muted">Aritmética (Turno Mañana)</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/matematica4.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Martha Delgado A.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente Colegiada</small>
+                                <small class="text-muted">Matemática 4.° y 5.°</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 2: Comunicación -->
+                <div class="tab-pane fade" id="pills-com" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/comunicación.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Mg. Maria Santos H.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Coordinador de Área</small>
+                                <small class="text-muted">Lenguaje y Literatura</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/comunicacion2.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Sofia Benavides T.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente Colegiada</small>
+                                <small class="text-muted">Comprensión Lectora</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/comunicacion3.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Fernando Dávila</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente Colegiado</small>
+                                <small class="text-muted">Razonamiento Verbal</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 3: Ciencia y Tecnología -->
+                <div class="tab-pane fade" id="pills-cyt" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/cyt.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Ing. Alberto Salazar P.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Coordinador de CyT</small>
+                                <small class="text-muted">Física y Química</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/cyt2.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Beatriz Espinoza V.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente Colegiada</small>
+                                <small class="text-muted">Biología y Ecología</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 4: Ciencias Sociales y DPCC -->
+                <div class="tab-pane fade" id="pills-soc" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/CCSS.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Gonzalo Paredes R.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Coordinador CC.SS.</small>
+                                <small class="text-muted">Historia del Perú y Geografía</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/DPCC.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Rosa Morales T.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente de DPCC</small>
+                                <small class="text-muted">Ciudadanía y Cívica</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 5: Talleres EPT -->
+                <div class="tab-pane fade" id="pills-ept" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/computacion.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Néstor Huamán K.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Taller de Computación</small>
+                                <small class="text-muted">Ofimática y Diseño Digital</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/EPT.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Isabel Cárdenas Q.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Taller de Ind. Alimentaria</small>
+                                <small class="text-muted">Procesamiento de Alimentos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 6: Inglés y Arte -->
+                <div class="tab-pane fade" id="pills-ing" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/ingles.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Lic. Patricia Gómez L.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente de Inglés</small>
+                                <small class="text-muted">Idioma Extranjero</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/arte.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Raúl Benítez S.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente de Arte</small>
+                                <small class="text-muted">Música y Artes Plásticas</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 7: Educación Física y Religión -->
+                <div class="tab-pane fade" id="pills-ef" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/fisica.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Gabriel Paredes R.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente de Ed. Física</small>
+                                <small class="text-muted">Deportes y Psicomotricidad</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card border-0 shadow-sm rounded-3 p-3 text-center bg-white docente-card">
+                                <img src="../assets/img/religion.png" class="rounded-circle mx-auto mb-2" alt="Profesor">
+                                <h6 class="fw-bold text-dark mb-1">Prof. Carmen Torres B.</h6>
+                                <small class="text-success fw-semibold d-block mb-1">Docente de Religión</small>
+                                <small class="text-muted">Educación Religiosa</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Nota al pie de la lista -->
+            <div class="text-center mt-4">
+                <small class="text-muted"><em>* Nota: Se muestra una selección representativa de la plana docente oficial de 62 educadores colegiados.</em></small>
+            </div>
+        </div>
+    </section>
+
+   <!-- SECCIÓN INSTALACIONES Y UBICACIÓN GPS -->
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase">Nuestro Campus</span>
+        <h2 class="fw-bold text-success mt-2">Instalaciones y Ubicación GPS</h2>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+        <!-- COLUMNA IZQUIERDA: RECORRIDO POR EL CAMPUS (VIDEO) -->
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center py-2">
+                    <span class="small fw-bold"><i class="bi bi-play-btn-fill text-warning me-2"></i>Recorrido por el Campus</span>
+                    <span class="badge bg-success small">Supe Pueblo</span>
+                </div>
+                <div class="card-body p-0 position-relative" style="min-height: 315px;">
+                    <img src="../assets/img/colegioporton.png" class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover; filter: brightness(0.5);" alt="Portada Colegio">
+                    <div class="position-relative d-flex flex-column justify-content-center align-items-center h-100 p-4 text-center text-white" style="z-index: 2; min-height: 315px;">
+                        <a href="https://www.youtube.com/watch?v=X_1p1sDHMvc" target="_blank" class="text-decoration-none">
+                            <div class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center mb-2 shadow" style="width: 55px; height: 55px;">
+                                <i class="bi bi-play-fill fs-2 ms-1"></i>
+                            </div>
+                        </a>
+                        <h6 class="fw-bold text-white mb-1">Video Institucional I.E.P. Francisco Vidal Laos</h6>
+                        <p class="small text-white-50 mb-3">Conoce nuestras instalaciones y actividades educativas</p>
+                        <a href="https://www.youtube.com/watch?v=X_1p1sDHMvc" target="_blank" class="btn btn-danger btn-sm px-3 rounded-pill shadow">
+                            <i class="bi bi-youtube me-2"></i>Ver Video en YouTube
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-top-0 py-2">
+                    <small class="fw-bold text-success d-block">Pabellones, Laboratorios y Patios</small>
+                    <small class="text-muted">Conoce nuestros espacios acondicionados para la enseñanza.</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: UBICACIÓN GPS (MAPA) -->
+        <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+                <div class="card-header bg-success text-white d-flex justify-content-between align-items-center py-2">
+                    <span class="small fw-bold"><i class="bi bi-geo-alt-fill text-warning me-2"></i>Ubicación GPS en Google Maps</span>
+                    <span class="small text-white-50">Calle C. Córdova 425</span>
+                </div>
+                <div class="card-body p-0">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.366228318047!2d-77.7153!3d-10.7981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9107386c6b4d3b6f%3A0x6b4d3b6f!2sCalle%20C.%20C%C3%B3rdova%20425%2C%20Supe!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe" 
+                        width="100%" 
+                        height="315" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="card-footer bg-white border-top-0 py-2">
+                    <small class="fw-bold text-success d-block">Dirección Institucional</small>
+                    <small class="text-muted"><i class="bi bi-geo-alt me-1"></i>Calle C. Córdova 425, Distrito de Supe Pueblo, Provincia de Barranca, Región Lima - Perú.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- FOOTER INSTITUCIONAL -->
+    <footer class="text-white pt-5 pb-3" style="background-color: #424242; border-top: 4px solid #FBC02D; font-family: 'Roboto', sans-serif;">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">I.E.P. Francisco Vidal Laos</h5>
+                    <p class="small text-white-50">Institución Educativa Pública de nivel secundaria comprometida con la formación integral en Supe Pueblo.</p>
+                    <p class="small text-white-50"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Calle C. Córdova 425, Supe Pueblo, Barranca - Perú</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="pages/nosotros.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Nuestra Historia</a></li>
+                        <li class="mb-2"><a href="pages/servicios.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Servicios Educativos</a></li>
+                        <li class="mb-2"><a href="pages/tramites.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Trámites y Secretaría</a></li>
+                        <li class="mb-2"><a href="sistema/index.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right text-warning me-1"></i> Acceso al Sistema de Asistencia</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-warning mb-3" style="font-family: 'Poppins', sans-serif;">Contacto y Redes</h5>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> (01) 236-4780</p>
+                    <p class="small text-white-50 mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> hnorabuenac@gmail.com</p>
+                    <p class="small text-white-50 mb-3"><i class="bi bi-clock-fill text-warning me-2"></i> Lunes a Viernes: 7:30 AM - 3:30 PM</p>
+                    
+                    <!-- REDES SOCIALES Y WHATSAPP DIRECTO -->
+                    <div class="d-flex gap-2 align-items-center mt-3 pt-2 border-top border-secondary">
+                        <span class="small text-white-50 me-1">Síguenos:</span>
+                        <a href="https://www.facebook.com/iepfranciscovidal/?locale=es_LA" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@iepfranciscovidal" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/51970367733?text=Hola,%20deseo%20informaci%C3%B3n" target="_blank" class="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center gap-1 fw-bold">
+                            <i class="bi bi-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row align-items-center pt-2">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">&copy; 2026 I.E.P. Francisco Vidal Laos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0 text-white-50">Desarrollado en convenio con el <span class="text-warning">IESTP "Víctor Raúl Haya de la Torre"</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
